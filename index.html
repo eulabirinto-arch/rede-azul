@@ -6,14 +6,15 @@
 
 <title>Rede Azul</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header class="header">
-    <h1>Rede Azul</h1>
+    <h1>💙 Rede Azul</h1>
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#desenvolvimento">Desenvolvimento</a>
@@ -24,83 +25,51 @@
 
 <!-- HERO -->
 <section class="hero">
-    <div class="overlay"></div>
+    <div class="hero-text">
+        <p class="tag">Apoio ao TEA</p>
+        <h2>Cuidar começa com compreensão</h2>
+        <p>Informação, acolhimento e ferramentas para crianças e famílias</p>
 
-    <div class="hero-content">
-        <h2>Compreender é o primeiro passo para cuidar</h2>
-        <p>Apoio para crianças com TEA e suas famílias</p>
+        <button onclick="scrollToSection()">Explorar</button>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="">
     </div>
 </section>
 
-<!-- CARDS -->
-<section class="cards">
-
-<div class="card">
-<h3>Sobre o TEA</h3>
-<p>Entenda o transtorno de forma clara e baseada em evidências.</p>
-</div>
-
-<div class="card">
-<h3>Desenvolvimento</h3>
-<p>Como acompanhar o crescimento da criança.</p>
-</div>
-
-<div class="card">
-<h3>Comunicação</h3>
-<p>Ferramentas para expressão e autonomia.</p>
-</div>
-
-<div class="card">
-<h3>Apoio</h3>
-<p>Orientações para famílias e cuidadores.</p>
-</div>
-
-</section>
-
 <!-- SOBRE -->
-<section id="sobre" class="section">
-<h2>O que é o TEA?</h2>
-
+<section id="sobre" class="section fade">
+<h2>Sobre o TEA</h2>
 <p>
 O Transtorno do Espectro Autista é uma condição do neurodesenvolvimento
 que impacta comunicação, comportamento e interação social.
 </p>
-
-<p>
-Cada criança apresenta características únicas, sendo essencial
-o acompanhamento individualizado.
-</p>
 </section>
 
-<!-- DESENVOLVIMENTO -->
-<section id="desenvolvimento" class="section light">
-<h2>Desenvolvimento infantil</h2>
+<!-- CARDS -->
+<section class="cards fade">
 
-<p>
-O desenvolvimento ocorre de forma singular, sendo importante estimular
-habilidades sociais, cognitivas e emocionais.
-</p>
-
-<ul>
-<li>Rotina estruturada</li>
-<li>Estímulo à comunicação</li>
-<li>Interações progressivas</li>
-</ul>
-
-</section>
-
-<!-- COMUNICAÇÃO -->
-<section id="comunicacao" class="section">
-<h2>Comunicação alternativa</h2>
-
-<p class="sub">Clique nos botões para se comunicar</p>
-
-<div class="comunicacao">
-<button onclick="falar('Quero comer')">🍽️</button>
-<button onclick="falar('Quero água')">💧</button>
-<button onclick="falar('Quero brincar')">🎮</button>
-<button onclick="falar('Estou cansado')">😴</button>
-<button onclick="falar('Preciso de ajuda')">🆘</button>
+<div class="card">
+<h3>📊 Desenvolvimento</h3>
+<p>Fases e evolução da criança</p>
 </div>
 
-<p id="fala" class="fala"></p>
+<div class="card">
+<h3>🧠 Estratégias</h3>
+<p>Como lidar no dia a dia</p>
+</div>
+
+<div class="card">
+<h3>🎮 Atividades</h3>
+<p>Estimulação e aprendizado</p>
+</div>
+
+<div class="card">
+<h3>❤️ Apoio</h3>
+<p>Orientação para famílias</p>
+</div>
+
+</section>
+
+<!-- COMUNICAÇÃO
