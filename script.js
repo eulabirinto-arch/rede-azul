@@ -18,3 +18,8 @@ function addPost() {
 function likePost(button) {
     button.innerText = "❤️ Curtido";
 }
+
+/* MODO ACOLHIMENTO */
+function acolhimento() {
+    alert("Respire fundo 💙\nVocê está fazendo o seu melhor.\nVocê não está sozinha.");
+}
