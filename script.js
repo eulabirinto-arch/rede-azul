@@ -1,7 +1,6 @@
-function acolhimento() {
-    alert("Respire fundo 💙 Você não está sozinha.");
-}
+function falar(texto){
+document.getElementById("frase").innerText = texto;
 
-function setHumor(h) {
-    document.getElementById("humor").innerText = "Humor: " + h;
+let voz = new SpeechSynthesisUtterance(texto);
+speechSynthesis.speak(voz);
 }
