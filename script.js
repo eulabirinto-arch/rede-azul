@@ -2,24 +2,16 @@ function addPost() {
     let text = document.getElementById("postText").value;
     let posts = document.getElementById("posts");
 
-    if (text.trim() === "") return;
+    if (text === "") return;
 
     let newPost = document.createElement("div");
     newPost.className = "post";
-    newPost.innerHTML = `
-        <p>${text}</p>
-        <button onclick="likePost(this)">❤️ Curtir</button>
-    `;
+    newPost.innerHTML = "<p>" + text + "</p>";
 
     posts.prepend(newPost);
     document.getElementById("postText").value = "";
 }
 
-function likePost(button) {
-    button.innerText = "❤️ Curtido";
-}
-
-/* MODO ACOLHIMENTO */
 function acolhimento() {
-    alert("Respire fundo 💙\nVocê está fazendo o seu melhor.\nVocê não está sozinha.");
+    alert("Respire fundo 💙 Você não está sozinha.");
 }
