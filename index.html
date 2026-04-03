@@ -4,47 +4,70 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rede Azul</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>💙 Rede Azul</h1>
-<nav>
-<a href="index.html">Início</a>
-<a href="sobre.html">Sobre</a>
-<a href="desenvolvimento.html">Desenvolvimento</a>
-<a href="comunicacao.html">Comunicação</a>
-<a href="atividades.html">Atividades</a>
-<a href="apoio.html">Apoio</a>
-</nav>
+<header class="header">
+    <h1>💙 Rede Azul</h1>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#desenvolvimento">Desenvolvimento</a>
+        <a href="#comunicacao">Comunicação</a>
+        <a href="#apoio">Apoio</a>
+    </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-<div>
-<h2>Cuidar, entender e acolher</h2>
-<p>Apoio para crianças com TEA (3 a 12 anos)</p>
-</div>
+    <div class="hero-content">
+        <h2>Cuidar também é compreender</h2>
+        <p>Apoio para crianças com TEA e suas famílias</p>
+        <button onclick="scrollToSection()">Começar</button>
+    </div>
 </section>
 
+<!-- CARDS -->
 <section class="cards">
 
-<a href="sobre.html" class="card"><div class="icon">🧠</div>Sobre</a>
-<a href="desenvolvimento.html" class="card"><div class="icon">📊</div>Desenvolvimento</a>
-<a href="comunicacao.html" class="card"><div class="icon">🗣️</div>Comunicação</a>
-<a href="atividades.html" class="card"><div class="icon">🎮</div>Atividades</a>
-<a href="apoio.html" class="card"><div class="icon">❤️</div>Apoio</a>
+<div class="card">
+    <h3>🧠 Sobre</h3>
+    <p>Entenda o TEA de forma clara e acessível.</p>
+</div>
+
+<div class="card">
+    <h3>📊 Desenvolvimento</h3>
+    <p>Fases e evolução da criança.</p>
+</div>
+
+<div class="card">
+    <h3>🗣️ Comunicação</h3>
+    <p>Ferramentas para se expressar.</p>
+</div>
+
+<div class="card">
+    <h3>❤️ Apoio</h3>
+    <p>Orientação para famílias.</p>
+</div>
 
 </section>
 
-<footer>
-<h3>Referências</h3>
-<p>OMS | Ministério da Saúde | DSM-5 | Sociedade Brasileira de Pediatria</p>
-<p>Este site não substitui acompanhamento profissional.</p>
-</footer>
+<!-- SOBRE -->
+<section id="sobre" class="section">
+<h2>O que é o TEA?</h2>
+<p>
+O Transtorno do Espectro Autista é uma condição do neurodesenvolvimento
+que afeta comunicação e interação social.
+</p>
+</section>
 
-<script src="script.js"></script>
+<!-- DESENVOLVIMENTO -->
+<section id="desenvolvimento" class="section alt">
+<h2>Desenvolvimento</h2>
+<p>O desenvolvimento ocorre de forma única em cada criança.</p>
+</section>
 
-</body>
-</html>
+<!--
