@@ -1,48 +1,26 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #eef5ff, #ffffff);
-}
-
-/* HEADER */
-header {
-    background: #2f6edb;
+.hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
-/* CONTAINER */
-.container {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e') center/cover;
+    filter: blur(6px);
+    opacity: 0.5;
+    z-index: 0;
 }
 
-/* TÍTULOS */
-h2 {
-    color: #2f6edb;
-}
-
-h3 {
-    margin-top: 20px;
-    color: #444;
-}
-
-/* CARDS */
-.card {
-    border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-/* BOTÕES */
-button {
-    background: #2f6edb;
-    border-radius: 20px;
-}
-
-/* SUAVIDADE */
-section {
-    margin-bottom: 30px;
+.hero h2, .hero p {
+    position: relative;
+    z-index: 1;
 }
