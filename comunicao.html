@@ -2,37 +2,33 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comunicação Alternativa</title>
+<title>Comunicação</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>💙 Rede Azul</h1>
-</header>
+<header><h1>💙 Rede Azul</h1></header>
 
 <section class="container">
-    <h2>🗣️ Comunicação Alternativa</h2>
 
-    <p>
-    Algumas crianças com TEA podem apresentar dificuldades na fala.
-    A comunicação alternativa ajuda a expressar necessidades e emoções.
-    </p>
+<h2>Comunicação Alternativa</h2>
 
-    <h3>📷 Comunicação por imagens</h3>
-    <p>Uso de figuras para representar ações como comer, dormir e brincar.</p>
+<p>Clique para se comunicar:</p>
 
-    <h3>✋ Gestos e sinais</h3>
-    <p>Movimentos simples que ajudam na comunicação do dia a dia.</p>
+<div class="comunicacao">
+<button onclick="falar('Quero comer')">🍽️ Comer</button>
+<button onclick="falar('Quero beber')">🥤 Beber</button>
+<button onclick="falar('Quero brincar')">🎮 Brincar</button>
+<button onclick="falar('Estou cansado')">😴 Cansado</button>
+<button onclick="falar('Quero ajuda')">🆘 Ajuda</button>
+</div>
 
-    <h3>📱 Aplicativos</h3>
-    <p>Ferramentas digitais podem auxiliar na comunicação.</p>
+<p id="frase"></p>
 
-    <h3>💡 Dica prática</h3>
-    <p>Comece com poucas imagens e vá aumentando gradualmente.</p>
 </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
