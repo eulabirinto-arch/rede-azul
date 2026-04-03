@@ -1,45 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Rede Azul</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+function addPost() {
+    let text = document.getElementById("postText").value;
+    let posts = document.getElementById("posts");
 
-<header>
-    <h1>💙 Rede Azul</h1>
-    <nav>
-        <a href="#">Início</a>
-        <a href="#forum">Fórum</a>
-        <a href="#">Diário</a>
-        <a href="#">Mapa</a>
-        <a href="#">Apoio</a>
-    </nav>
-</header>
+    if (text.trim() === "") return;
 
-<section class="banner">
-    <h2>Você não está sozinha.</h2>
-    <p>Sua rede de apoio começa aqui.</p>
-    <button>Entrar no Fórum</button>
-</section>
+    let newPost = document.createElement("div");
+    newPost.className = "post";
+    newPost.innerHTML = `
+        <p>${text}</p>
+        <button onclick="likePost(this)">❤️ Curtir</button>
+    `;
 
-<section class="cards">
-    <div class="card">💬 Fórum</div>
-    <div class="card">📖 Diário</div>
-    <div class="card">🗺️ Mapa</div>
-    <div class="card">❤️ Apoio</div>
-</section>
+    posts.prepend(newPost);
+    document.getElementById("postText").value = "";
+}
 
-<section id="forum" class="forum">
-    <h2>Fórum</h2>
-
-    <textarea id="postText" placeholder="Compartilhe algo..."></textarea>
-    <button onclick="addPost()">Postar</button>
-
-    <div id="posts"></div>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
+function likePost(button) {
+    button.innerText = "❤️ Curtido";
+}
