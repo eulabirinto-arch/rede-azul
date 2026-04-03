@@ -1,26 +1,112 @@
+body {
+margin:0;
+font-family: Arial;
+background: linear-gradient(#eef5ff, #ffffff);
+}
+
+/* HEADER */
+header {
+background:#2f6edb;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav a {
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+/* HERO COM BLUR */
 .hero {
-    position: relative;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    overflow: hidden;
+position:relative;
+height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e') center/cover;
-    filter: blur(6px);
-    opacity: 0.5;
-    z-index: 0;
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:url('https://images.unsplash.com/photo-1607746882042-944635dfe10e') center/cover;
+filter:blur(6px);
+opacity:0.5;
+z-index:0;
 }
 
-.hero h2, .hero p {
-    position: relative;
-    z-index: 1;
+.hero div {
+position:relative;
+z-index:1;
+}
+
+/* CARDS */
+.cards {
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin:30px;
+}
+
+.card {
+background:white;
+padding:20px;
+border-radius:15px;
+text-decoration:none;
+color:black;
+width:180px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover {
+transform:translateY(-5px);
+}
+
+/* ICON */
+.icon {
+font-size:40px;
+animation:flutuar 3s infinite;
+}
+
+@keyframes flutuar {
+0%{transform:translateY(0);}
+50%{transform:translateY(-6px);}
+100%{transform:translateY(0);}
+}
+
+/* CONTAINER */
+.container {
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+/* COMUNICAÇÃO */
+.comunicacao {
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.comunicacao button {
+padding:15px;
+font-size:18px;
+border-radius:15px;
+background:#eaf3ff;
+border:none;
+}
+
+/* FOOTER */
+footer {
+text-align:center;
+padding:20px;
+background:#ddd;
 }
