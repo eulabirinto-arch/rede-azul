@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Rede Azul</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Rede Azul</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>💙 Rede Azul</h1>
     <nav>
-        <a href="#">Início</a>
-        <a href="#forum">Fórum</a>
-        <a href="#">Diário</a>
-        <a href="#">Mapa</a>
-        <a href="#">Apoio</a>
+        <a href="index.html">Início</a>
+        <a href="forum.html">Fórum</a>
+        <a href="diario.html">Diário</a>
+        <a href="apoio.html">Apoio</a>
     </nav>
 </header>
 
-<section class="banner">
-    <h2>Você não está sozinha.</h2>
-    <p>Sua rede de apoio começa aqui.</p>
-    <button>Entrar no Fórum</button>
+<section class="hero">
+    <div>
+        <h2>Você não está sozinha</h2>
+        <p>Um espaço seguro para compartilhar, aprender e acolher 💙</p>
+        <a href="forum.html" class="btn">Entrar no Fórum</a>
+    </div>
 </section>
 
-<section class="cards">
-    <div class="card">💬 Fórum</div>
-    <div class="card">📖 Diário</div>
-    <div class="card">🗺️ Mapa</div>
-    <div class="card">❤️ Apoio</div>
+<section class="grid">
+    <a href="forum.html" class="card">💬 Fórum</a>
+    <a href="diario.html" class="card">📖 Diário</a>
+    <a href="apoio.html" class="card">❤️ Apoio</a>
 </section>
 
-<section id="forum" class="forum">
-    <h2>Fórum</h2>
+<p class="quote">“Cada pequeno avanço é uma grande conquista.”</p>
 
-    <textarea id="postText" placeholder="Compartilhe algo..."></textarea>
-    <button onclick="addPost()">Postar</button>
-
-    <div id="posts"></div>
-</section>
+<div class="acolhimento" onclick="acolhimento()">
+💙 Preciso de apoio
+</div>
 
 <script src="script.js"></script>
 </body>
